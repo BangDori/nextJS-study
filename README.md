@@ -10,6 +10,9 @@
         <td align="center">
             <a href="https://github.com/Legitgoons"><img height="120px" width="120px" src="https://avatars.githubusercontent.com/u/101088491?v=4"/></a>
         </td>        
+        <td align="center">
+            <a href="https://github.com/chachapapa"><img height="120px" width="120px" src="https://avatars.githubusercontent.com/u/119780428?v=4"/></a>
+        </td>       
     </tr>
     <tr>
         <td align="center">
@@ -17,6 +20,9 @@
         </td>
         <td align="center">
             <a href="https://github.com/Legitgoons">이의찬</a>
+        </td>        
+        <td align="center">
+            <a href="https://github.com/chachapapa">정재웅</a>
         </td>
     </tr>
 </table>
@@ -24,7 +30,8 @@
 ## 진행 일정
 
 - 위치: 비대면(Discord)
-- 시간: 매주 금요일 20:00 ~
+- 시간: 매주 화요일 20:00 ~
+- 시작 날짜: 2024.06.11
 
 ## 진행 내용
 
