@@ -10,16 +10,19 @@ Top-level folders are used to organize your application's code and static assets
 
 > 최상위 폴더는 애플리케이션의 코드와 정적 자산을 구성하는 데 사용됩니다.
 
-> | Folder Name | Description                        |
-> | ----------- | ---------------------------------- |
-> | app         | App Router                         |
-> | pages       | Pages Router                       |
-> | public      | Static assets to be served         |
-> | src         | Optional application source folder |
+| Folder Name | Description                        |
+| ----------- | ---------------------------------- |
+| app         | App Router                         |
+| pages       | Pages Router                       |
+| public      | Static assets to be served         |
+| src         | Optional application source folder |
 
 > app: App Router
+
 > pages: Pages Router
+
 > public: 제공할 정적 자산
+
 > src: 선택적인 app 소스 폴더
 
 ## Top-level files
@@ -45,18 +48,31 @@ Top-level files are used to configure your application, manage dependencies, run
 | jsconfig.json      | Configuration file for JavaScript       |
 
 > Next.js
+
 > next.config.js: Next.js 구성 파일
+
 > package.json: 프로젝트 종속성 및 스크립트
+
 > instrumentation.ts: OpenTelemetry 및 계측 파일, 모니터링 및 로깅을 위해 사용
+
 > middleware.ts: Next.js 요청 미들웨어
+
 > .env: 환경 변수
+
 > .env.local: 로컬 환경 변수
+
 > .env.production: 프로덕션 환경 변수
+
 > .env.development: 개발 환경 변수
+
 > .eslintrc.json: ESLint 구성 파일
+
 > .gitignore: Git에 올리지 않을 파일/폴더
+
 > next-env.d.ts: Next.js용 TypeScript 선언 파일
+
 > tsconfig.json: TypeScript 구성 파일
+
 > jsconfig.json: JavaScript 구성 파일
 
 ## app Routing Conventions
@@ -80,13 +96,21 @@ The following file conventions are used to define routes and handle metadata in 
 | default.js .jsx .tsx      | Parallel route fallback page |
 
 > layout.js .jsx .tsx: 레이아웃
+
 > page.js .jsx .tsx: 페이지
+
 > loading.js .jsx .tsx: 로딩 UI
+
 > not-found.js .jsx .tsx: 찾을 수 없는 UI
+
 > error.js .jsx .tsx: 오류 UI
+
 > global-error.js .jsx .tsx: 글로벌 오류 UI
+
 > route.js .ts: API 엔드포인트
+
 > template.js .jsx .tsx: 다시 렌더링된 레이아웃
+
 > default.js .jsx .tsx: 병렬 경로 폴백 페이지(기본적으로 보여줄 페이지)
 
 ### Nested Routes
@@ -97,6 +121,7 @@ The following file conventions are used to define routes and handle metadata in 
 | folder/folder | Nested route segment |
 
 > folder: 경로 세그먼트
+
 > folder/folder: 중첩된 경로 세그먼트
 
 ### Dynamic Routes
@@ -108,7 +133,9 @@ The following file conventions are used to define routes and handle metadata in 
 | [[...folder]] | Optional catch-all route segment |
 
 > [folder]: 동적 경로 세그먼트
+
 > [...folder]: 모든 경로 세그먼트
+
 > [[...folder]]: 선택적 모든 경로 세그먼트
 
 ### Route Groups and Private Folders
@@ -119,6 +146,7 @@ The following file conventions are used to define routes and handle metadata in 
 | \_folder    | Opt folder and all child segments out of routing |
 
 > (folder): 라우팅에 영향을 주지 않고 경로 그룹화
+
 > \_folder: 폴더 및 모든 하위 세그먼트를 라우팅에서 제외
 
 ### Parallel and Intercepted Routes
@@ -132,9 +160,13 @@ The following file conventions are used to define routes and handle metadata in 
 | (...)folder    | Intercept from root        |
 
 > @folder: 명명된 슬롯
+
 > (.)folder: 동일 레벨 가로채기
+
 > (..)folder: 한 레벨 위 가로채기
+
 > (..)(..)folder: 두 레벨 위 가로채기
+
 > (...)folder: 루트에서 가로채기
 
 ### Metadata File Conventions
@@ -150,9 +182,13 @@ The following file conventions are used to define routes and handle metadata in 
 | apple-icon.js .ts .tsx        | Generated Apple App Icon |
 
 > favicon.ico: 파비콘 파일
+
 > icon.ico .jpg .jpeg .png .svg: 앱 아이콘 파일
+
 > icon.js .ts .tsx: 생성된 앱 아이콘
+
 > apple-icon.jpg .jpeg .png: 애플 앱 아이콘 파일
+
 > apple-icon.js .ts .tsx: 생성된 애플 앱 아이콘
 
 #### Open Graph and Twitter Images
@@ -165,8 +201,11 @@ The following file conventions are used to define routes and handle metadata in 
 | twitter-image.js .ts .tsx           | Generated Twitter image    |
 
 > opengraph-image.jpg .jpeg .png .gif: 오픈 그래프 이미지 파일
+
 > opengraph-image.js .ts .tsx: 생성된 오픈 그래프 이미지
+
 > twitter-image.jpg .jpeg .png .gif: 트위터 이미지 파일
+
 > twitter-image.js .ts .tsx: 생성된 트위터 이미지
 
 #### SEO
@@ -179,8 +218,11 @@ The following file conventions are used to define routes and handle metadata in 
 | robots.js .ts  | Generated Robots file |
 
 > sitemap.xml: 사이트맵 파일
+
 > sitemap.js .ts: 생성된 사이트맵
+
 > robots.txt: 로봇 파일
+
 > robots.js .ts: 생성된 로봇 파일
 
 ## pages Routing Conventions
@@ -200,9 +242,13 @@ The following file conventions are used to define routes in the pages router.
 | 500.js .jsx .tsx        | 500 Error Page    |
 
 > \_app.js .jsx .tsx: 커스텀 앱
+
 > \_document.js .jsx .tsx: 커스텀 문서
+
 > \_error.js .jsx .tsx: 커스텀 에러 페이지
+
 > 404.js .jsx .tsx: 404 에러 페이지
+
 > 500.js .jsx .tsx: 500 에러 페이지
 
 ### Routes
@@ -215,6 +261,7 @@ The following file conventions are used to define routes in the pages router.
 | folder/index.js .jsx .tsx | Nested page |
 
 > index.js .jsx .tsx: 홈 페이지
+
 > folder/index.js .jsx .tsx: 중첩된 페이지
 
 #### File convention
@@ -225,6 +272,7 @@ The following file conventions are used to define routes in the pages router.
 | file.js .jsx .tsx  | Nested page |
 
 > index.js .jsx .tsx: 홈 페이지
+
 > file.js .jsx .tsx: 중첩된 페이지
 
 ### Dynamic Routes
@@ -238,7 +286,9 @@ The following file conventions are used to define routes in the pages router.
 | [[...folder]]/index.js .jsx .tsx | Optional catch-all route segment |
 
 > [folder]/index.js .jsx .tsx: 동적 경로 세그먼트
+
 > [...folder]/index.js .jsx .tsx: 모든 경로 세그먼트
+
 > [[...folder]]/index.js .jsx .tsx: 선택적 모든 경로 세그먼트
 
 #### File convention
@@ -250,7 +300,9 @@ The following file conventions are used to define routes in the pages router.
 | [[...file]].js .jsx .tsx | Optional catch-all route segment |
 
 > [file].js .jsx .tsx: 동적 경로 세그먼트
+
 > [...file].js .jsx .tsx: 모든 경로 세그먼트
+
 > [[...file]].js .jsx .tsx: 선택적 모든 경로 세그먼트
 
 # Q&A
