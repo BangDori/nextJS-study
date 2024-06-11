@@ -10,11 +10,12 @@ Top-level folders are used to organize your application's code and static assets
 
 > 최상위 폴더는 애플리케이션의 코드와 정적 자산을 구성하는 데 사용됩니다.
 
-| ------------------------------- | ---------------------------------- |
-| app | App Router |
-| pages | Pages Router |
-| public | Static assets to be served |
-| src | Optional application source folder |
+> | Folder Name | Description                        |
+> | ----------- | ---------------------------------- |
+> | app         | App Router                         |
+> | pages       | Pages Router                       |
+> | public      | Static assets to be served         |
+> | src         | Optional application source folder |
 
 > app: App Router
 > pages: Pages Router
@@ -66,6 +67,7 @@ The following file conventions are used to define routes and handle metadata in 
 
 ### Routing Files
 
+| File Name                 | Description                  |
 | ------------------------- | ---------------------------- |
 | layout.js .jsx .tsx       | Layout                       |
 | page.js .jsx .tsx         | Page                         |
@@ -89,6 +91,7 @@ The following file conventions are used to define routes and handle metadata in 
 
 ### Nested Routes
 
+| Folder Name   | Description          |
 | ------------- | -------------------- |
 | folder        | Route segment        |
 | folder/folder | Nested route segment |
@@ -98,6 +101,7 @@ The following file conventions are used to define routes and handle metadata in 
 
 ### Dynamic Routes
 
+| Folder Name   | Description                      |
 | ------------- | -------------------------------- |
 | [folder]      | Dynamic route segment            |
 | [...folder]   | Catch-all route segment          |
@@ -109,15 +113,17 @@ The following file conventions are used to define routes and handle metadata in 
 
 ### Route Groups and Private Folders
 
-| -------- | ------------------------------------------------ |
-| (folder) | Group routes without affecting routing           |
-| \_folder | Opt folder and all child segments out of routing |
+| Folder Name | Description                                      |
+| ----------- | ------------------------------------------------ |
+| (folder)    | Group routes without affecting routing           |
+| \_folder    | Opt folder and all child segments out of routing |
 
 > (folder): 라우팅에 영향을 주지 않고 경로 그룹화
 > \_folder: 폴더 및 모든 하위 세그먼트를 라우팅에서 제외
 
 ### Parallel and Intercepted Routes
 
+| Folder Name    | Description                |
 | -------------- | -------------------------- |
 | @folder        | Named slot                 |
 | (.)folder      | Intercept same level       |
@@ -185,7 +191,7 @@ The following file conventions are used to define routes in the pages router.
 
 ### Special Files
 
-| File Name               |                   |
+| File Name               | Description       |
 | ----------------------- | ----------------- |
 | \_app.js .jsx .tsx      | Custom App        |
 | \_document.js .jsx .tsx | Custom Document   |
@@ -203,7 +209,7 @@ The following file conventions are used to define routes in the pages router.
 
 #### Folder convention
 
-| File Name                 |             |
+| File Name                 | Description |
 | ------------------------- | ----------- |
 | index.js .jsx .tsx        | Home page   |
 | folder/index.js .jsx .tsx | Nested page |
@@ -213,7 +219,7 @@ The following file conventions are used to define routes in the pages router.
 
 #### File convention
 
-| File Name          |             |
+| File Name          | Description |
 | ------------------ | ----------- |
 | index.js .jsx .tsx | Home page   |
 | file.js .jsx .tsx  | Nested page |
@@ -225,7 +231,7 @@ The following file conventions are used to define routes in the pages router.
 
 #### Folder convention
 
-| File Name                        |                                  |
+| File Name                        | Description                      |
 | -------------------------------- | -------------------------------- |
 | [folder]/index.js .jsx .tsx      | Dynamic route segment            |
 | [...folder]/index.js .jsx .tsx   | Catch-all route segment          |
@@ -237,7 +243,7 @@ The following file conventions are used to define routes in the pages router.
 
 #### File convention
 
-| File Name                |                                  |
+| File Name                | Description                      |
 | ------------------------ | -------------------------------- |
 | [file].js .jsx .tsx      | Dynamic route segment            |
 | [...file].js .jsx .tsx   | Catch-all route segment          |
